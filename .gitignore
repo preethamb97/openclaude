@@ -6,3 +6,5 @@ dist/
 !.env.example
 .openclaude-profile.json
 reports/
+__pycache__
+venv_lmstudio
