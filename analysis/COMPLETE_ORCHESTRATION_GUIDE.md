@@ -1,5 +1,15 @@
 # Complete OpenClaude Orchestration Guide
 
+> **📘 How to Use This Guide**
+> 
+> This guide explains how OpenClaude works from start to finish. It's designed for developers who want to understand:
+> - How the application starts and processes user input
+> - How commands and tools work
+> - How AI providers are integrated
+> - How to extend the system
+> 
+> **No prior knowledge of the codebase required!** We explain each concept with examples.
+
 ## Table of Contents
 1. [What is OpenClaude?](#what-is-openclaude)
 2. [High-Level Architecture](#high-level-architecture)
@@ -13,15 +23,41 @@
 
 ## What is OpenClaude?
 
-OpenClaude is a **CLI tool** that allows you to use **Claude Code with any LLM** (Large Language Model). It's built on top of Anthropic's Claude Code but extends it to work with multiple AI providers.
+**OpenClaude** is a command-line tool that lets you use AI-powered code assistance with **any AI model** you choose. Think of it as a universal adapter for AI models - instead of being locked into one provider (like Anthropic's Claude), you can use OpenAI's GPT, Google's Gemini, or even run models locally with Ollama.
 
-### Key Capabilities
-- **Multi-Provider Support**: Works with OpenAI, Gemini, Ollama, DeepSeek, and 200+ other models
-- **Smart Routing**: Automatically selects the best provider based on latency, cost, and health
-- **Local Model Support**: Works with Ollama and Atomic Chat (Apple Silicon)
-- **Rich TUI**: Beautiful terminal interface built with React/Ink
-- **Bridge System**: Remote session management and control
-- **Plugin Architecture**: Extensible via plugins and skills
+### Why Does This Exist?
+
+Anthropic's Claude Code is powerful but only works with Claude models. OpenClaude extends it so you can:
+- Use cheaper models (like Ollama running locally - **free!**)
+- Use different models for different tasks
+- Run everything offline if needed
+- Switch providers without changing your workflow
+
+### Key Capabilities Explained
+
+| Capability | What It Means | Example Use Case |
+|------------|---------------|------------------|
+| **Multi-Provider Support** | Connect to any AI service | Use GPT-4 for complex tasks, Ollama for simple ones |
+| **Smart Routing** | Automatically picks the best provider | Sends quick questions to fast models, complex ones to smart models |
+| **Local Model Support** | Run AI on your own machine | Work offline, no API costs, complete privacy |
+| **Rich TUI** | Beautiful terminal interface | Easy to read responses with syntax highlighting |
+| **Bridge System** | Control from mobile/web | Start work on desktop, continue on phone |
+| **Plugin Architecture** | Add custom features | Create your own commands and tools |
+
+### Simple Example
+
+```bash
+# Using Claude (paid, cloud-based)
+$ openclaude --model claude-sonnet "Explain this code"
+
+# Using OpenAI (paid, cloud-based)  
+$ openclaude --provider openai --model gpt-4 "Explain this code"
+
+# Using Ollama (FREE, runs on your machine!)
+$ openclaude --provider ollama --model llama3:8b "Explain this code"
+```
+
+All three commands work the same way - OpenClaude handles the differences!
 
 ---
 
