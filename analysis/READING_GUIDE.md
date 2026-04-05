@@ -14,6 +14,18 @@ If you want to quickly understand OpenClaude:
 
 2. **[QUICK_REFERENCE.md](./QUICK_REFERENCE.md)** - Keep this handy for quick lookups.
 
+## 🎥 Video Tutorials
+
+For topics that are easier to learn through video, see [VIDEO_TUTORIALS.md](./VIDEO_TUTORIALS.md) for curated YouTube tutorials on:
+- TypeScript basics
+- Node.js & async programming
+- React & React Hooks
+- CLI development
+- Terminal UI with Ink
+- AI & LLM integration
+- Model Context Protocol (MCP)
+- Python for AI integration
+
 ---
 
 ## 📚 Complete Learning Path (2-3 hours)
