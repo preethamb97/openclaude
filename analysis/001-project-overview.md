@@ -1,5 +1,7 @@
 # 001 - Project Overview: OpenClaude
 
+> **Note**: This is the starting point for understanding OpenClaude. For a complete guide, see [COMPLETE_ORCHESTRATION_GUIDE.md](./COMPLETE_ORCHESTRATION_GUIDE.md).
+
 ## What is OpenClaude?
 
 OpenClaude is a **CLI tool** that allows you to use **Claude Code with any LLM** (Large Language Model). It's built on top of Anthropic's Claude Code but opens it up to work with multiple AI providers including:

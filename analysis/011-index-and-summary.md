@@ -9,31 +9,32 @@ This folder contains a complete analysis of the OpenClaude codebase. Each file c
 | # | File | Topic | Description |
 |---|------|-------|-------------|
 | 001 | `001-project-overview.md` | **Project Overview** | What OpenClaude is, features, tech stack |
-| 002 | `002-cli-and-build-system.md` | **CLI & Build** | Entry point, build system, TypeScript config |
-| 003 | `003-main-application.md` | **Main Application** | `src/main.tsx` - command parsing, initialization |
-| 004 | `004-commands-system.md` | **Commands System** | Slash commands, routing, registration |
-| 005 | `005-tools-system.md` | **Tools System** | AI tools (file ops, bash, web search) |
-| 006 | `006-bridge-system.md` | **Bridge System** | Remote session management, mobile control |
-| 007 | `007-query-engine.md` | **Query Engine** | AI conversation loop, context management |
-| 008 | `008-python-providers.md` | **Python Providers** | Ollama, Atomic Chat, Smart Router |
-| 009 | `009-remaining-files-overview.md` | **Remaining Files** | Other important files and patterns |
+| 002 | `002-project-structure.md` | **Project Structure** | Directory structure, all subsystems |
+| 003 | `003-cli-and-build-system.md` | **CLI & Build** | Entry point, build system, TypeScript config |
+| 004 | `004-main-application.md` | **Main Application** | `src/main.tsx` - command parsing, initialization |
+| 005 | `005-commands-system.md` | **Commands System** | Slash commands, routing, registration |
+| 006 | `006-tools-system.md` | **Tools System** | AI tools (file ops, bash, web search) |
+| 007 | `007-bridge-system.md` | **Bridge System** | Remote session management, mobile control |
+| 008 | `008-query-engine.md` | **Query Engine** | AI conversation loop, context management |
+| 009 | `009-python-providers.md` | **Python Providers** | Ollama, Atomic Chat, Smart Router |
+| 010 | `010-remaining-files-overview.md` | **Remaining Files** | Other important files and patterns |
 
 ## Quick Start Guide
 
 ### For JavaScript Full-Stack Developers
 
 1. **Start with**: `001-project-overview.md`
-2. **Then read**: `002-cli-and-build-system.md`
-3. **Core logic**: `003-main-application.md`
-4. **Interactive features**: `004-commands-system.md`
-5. **AI capabilities**: `005-tools-system.md`
+2. **Then read**: `003-cli-and-build-system.md`
+3. **Core logic**: `004-main-application.md`
+4. **Interactive features**: `005-commands-system.md`
+5. **AI capabilities**: `006-tools-system.md`
 
 ### For Understanding the Architecture
 
-1. **How it starts**: `002-cli-and-build-system.md` → `003-main-application.md`
-2. **User interaction**: `004-commands-system.md` → `005-tools-system.md`
-3. **AI processing**: `007-query-engine.md` → `008-python-providers.md`
-4. **Remote features**: `006-bridge-system.md`
+1. **How it starts**: `003-cli-and-build-system.md` → `004-main-application.md`
+2. **User interaction**: `005-commands-system.md` → `006-tools-system.md`
+3. **AI processing**: `008-query-engine.md` → `009-python-providers.md`
+4. **Remote features**: `007-bridge-system.md`
 
 ## Key Concepts Summary
 
@@ -86,21 +87,21 @@ User Input → Command Parser → Query Engine → AI Provider → Tool Executio
 | Question | Read File |
 |----------|-----------|
 | What is OpenClaude? | `001-project-overview.md` |
-| How does it start? | `002-cli-and-build-system.md` |
-| What commands are available? | `004-commands-system.md` |
-| How do tools work? | `005-tools-system.md` |
-| How does remote control work? | `006-bridge-system.md` |
-| How does AI processing work? | `007-query-engine.md` |
-| How to use local models? | `008-python-providers.md` |
+| How does it start? | `003-cli-and-build-system.md` |
+| What commands are available? | `005-commands-system.md` |
+| How do tools work? | `006-tools-system.md` |
+| How does remote control work? | `007-bridge-system.md` |
+| How does AI processing work? | `008-query-engine.md` |
+| How to use local models? | `009-python-providers.md` |
 
 ### 3. Development Reference
 
 For adding new features:
 
-1. **New Command**: See `004-commands-system.md`
-2. **New Tool**: See `005-tools-system.md`
-3. **New Provider**: See `008-python-providers.md`
-4. **New UI Component**: See `009-remaining-files-overview.md`
+1. **New Command**: See `005-commands-system.md`
+2. **New Tool**: See `006-tools-system.md`
+3. **New Provider**: See `009-python-providers.md`
+4. **New UI Component**: See `010-remaining-files-overview.md`
 
 ## Code Examples
 
@@ -242,10 +243,12 @@ The codebase demonstrates:
 
 ## Next Steps
 
-1. **Read the analysis files** in order (001-010)
+1. **Read the analysis files** in order (001-015)
 2. **Explore the code** using the analysis as a guide
 3. **Try running** OpenClaude with different providers
 4. **Add a feature** using the patterns described
+
+For a guided learning path, see [READING_GUIDE.md](./READING_GUIDE.md).
 
 ## License
 
@@ -254,7 +257,8 @@ MIT License - Open source and free to use
 ---
 
 **Analysis created**: 2026-04-03
-**Files**: 10 analysis files
+**Updated**: 2026-04-05 (renumbered and reorganized)
+**Files**: 18 analysis files (001-015 numbered + 3 comprehensive guides)
 **Coverage**: Complete codebase overview
 </task_progress>
 </write_to_file>
