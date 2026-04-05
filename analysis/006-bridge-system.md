@@ -41,7 +41,50 @@ A Bridge is a **remote control system** that:
 
 ## Bridge Components
 
-### 1. `bridgeMain.ts` - Main Bridge Loop
+## Bridge Components
+
+The bridge system consists of many files that work together:
+
+### Core Bridge Files
+- `bridgeApi.ts`: API client for communicating with bridge server
+- `bridgeConfig.ts`: Configuration management
+- `bridgeDebug.ts`: Debug utilities
+- `bridgeEnabled.ts`: Feature detection
+- `bridgeMain.ts`: Main bridge logic
+- `bridgeMessaging.ts`: Message handling
+- `bridgePermissionCallbacks.ts`: Permission callbacks
+- `bridgePointer.ts`: Pointer tracking
+- `bridgeStatusUtil.ts`: Status utilities
+- `bridgeUI.ts`: User interface
+
+### Session Management
+- `capacityWake.ts`: Capacity management
+- `codeSessionApi.ts`: Code session API
+- `createSession.ts`: Session creation
+- `sessionRunner.ts`: Session execution
+- `sessionIdCompat.ts`: Session ID compatibility
+
+### Remote Bridge
+- `remoteBridgeCore.ts`: Remote bridge core
+- `replBridge.ts`: REPL bridge
+- `replBridgeHandle.ts`: REPL bridge handle
+- `replBridgeTransport.ts`: REPL bridge transport
+
+### Utilities
+- `debugUtils.ts`: Debug utilities
+- `envLessBridgeConfig.ts`: Environment-less config
+- `flushGate.ts`: Flush gate control
+- `inboundAttachments.ts`: Inbound attachments
+- `inboundMessages.ts`: Inbound message handling
+- `initReplBridge.ts`: REPL bridge initialization
+- `jwtUtils.ts`: JWT utilities
+- `pollConfig.ts`: Polling configuration
+- `pollConfigDefaults.ts`: Default poll config
+- `trustedDevice.ts`: Trusted device management
+- `types.ts`: Type definitions
+- `workSecret.ts`: Secret management
+
+### Main Bridge Loop
 
 The heart of the bridge system:
 
